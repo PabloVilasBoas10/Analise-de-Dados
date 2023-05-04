@@ -17,8 +17,8 @@ print('-' * 50)
 
 # Quatidade de produtos por loja
 
-quantidade_produto = tabela_vendas[['ID Loja',
-                                    'Quantidade']].groupby('ID Loja').sum()
+quantidade_produto = tabela_vendas[[
+    'ID Loja', 'Quantidade']].groupby('ID Loja').sum()
 
 
 print(quantidade_produto)
